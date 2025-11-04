@@ -65,6 +65,21 @@ const translations = {
     'footer.rights': '© ۲۰۲۵ هوش پرداز. تمامی حقوق محفوظ است.',
     'footer.company': 'شرکت',
     'footer.followUs': 'ما را دنبال کنید',
+    
+    // Portfolio
+    'portfolio.subtitle': 'نمونه‌ای از پروژه‌های موفق ما',
+    'portfolio.projects.banking.title': 'پلتفرم بانکی آنلاین',
+    'portfolio.projects.banking.desc': 'توسعه پلتفرم بانکداری دیجیتال با امنیت بالا',
+    'portfolio.projects.cloud.title': 'سیستم مدیریت زیرساخت ابری',
+    'portfolio.projects.cloud.desc': 'راه‌اندازی و مدیریت زیرساخت ابری مقیاس‌پذیر',
+    'portfolio.projects.ai.title': 'پلتفرم تحلیل داده با AI',
+    'portfolio.projects.ai.desc': 'سیستم تحلیل هوشمند داده با یادگیری ماشین',
+    'portfolio.projects.security.title': 'تست نفوذ و امنیت شبکه',
+    'portfolio.projects.security.desc': 'ارزیابی امنیت و تست نفوذ برای شرکت مالی',
+    'portfolio.projects.mobile.title': 'اپلیکیشن موبایل فروشگاهی',
+    'portfolio.projects.mobile.desc': 'اپلیکیشن فروشگاه آنلاین با پشتیبانی از پرداخت',
+    'portfolio.projects.cicd.title': 'سیستم CI/CD خودکار',
+    'portfolio.projects.cicd.desc': 'پیاده‌سازی خط لوله CI/CD برای استقرار خودکار',
   },
   ar: {
     // Navigation
@@ -120,6 +135,21 @@ const translations = {
     'footer.rights': '© ٢٠٢٥ هوش برداز. جميع الحقوق محفوظة.',
     'footer.company': 'الشركة',
     'footer.followUs': 'تابعنا',
+    
+    // Portfolio
+    'portfolio.subtitle': 'أمثلة من مشاريعنا الناجحة',
+    'portfolio.projects.banking.title': 'منصة الخدمات المصرفية عبر الإنترنت',
+    'portfolio.projects.banking.desc': 'تطوير منصة مصرفية رقمية عالية الأمان',
+    'portfolio.projects.cloud.title': 'نظام إدارة البنية التحتية السحابية',
+    'portfolio.projects.cloud.desc': 'إعداد وإدارة بنية تحتية سحابية قابلة للتوسع',
+    'portfolio.projects.ai.title': 'منصة تحليل البيانات بالذكاء الاصطناعي',
+    'portfolio.projects.ai.desc': 'نظام تحليل ذكي للبيانات مع التعلم الآلي',
+    'portfolio.projects.security.title': 'اختبار الاختراق وأمن الشبكات',
+    'portfolio.projects.security.desc': 'تقييم الأمن واختبار الاختراق لشركة مالية',
+    'portfolio.projects.mobile.title': 'تطبيق جوال للتجارة الإلكترونية',
+    'portfolio.projects.mobile.desc': 'تطبيق متجر إلكتروني مع دعم الدفع',
+    'portfolio.projects.cicd.title': 'نظام CI/CD التلقائي',
+    'portfolio.projects.cicd.desc': 'تنفيذ خط أنابيب CI/CD للنشر التلقائي',
   },
   en: {
     // Navigation
@@ -175,6 +205,21 @@ const translations = {
     'footer.rights': '© 2025 Hoosh Pardaz. All rights reserved.',
     'footer.company': 'Company',
     'footer.followUs': 'Follow Us',
+    
+    // Portfolio
+    'portfolio.subtitle': 'Examples of Our Successful Projects',
+    'portfolio.projects.banking.title': 'Online Banking Platform',
+    'portfolio.projects.banking.desc': 'Development of a high-security digital banking platform',
+    'portfolio.projects.cloud.title': 'Cloud Infrastructure Management',
+    'portfolio.projects.cloud.desc': 'Setup and management of scalable cloud infrastructure',
+    'portfolio.projects.ai.title': 'AI-Powered Data Analytics',
+    'portfolio.projects.ai.desc': 'Intelligent data analysis system with machine learning',
+    'portfolio.projects.security.title': 'Network Security Assessment',
+    'portfolio.projects.security.desc': 'Security assessment and penetration testing for financial company',
+    'portfolio.projects.mobile.title': 'E-commerce Mobile App',
+    'portfolio.projects.mobile.desc': 'Online store application with payment support',
+    'portfolio.projects.cicd.title': 'Automated CI/CD Pipeline',
+    'portfolio.projects.cicd.desc': 'CI/CD pipeline implementation for automated deployment',
   },
 };
 

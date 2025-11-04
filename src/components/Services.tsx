@@ -10,26 +10,31 @@ export const Services = () => {
       icon: Code,
       title: t('services.software.title'),
       description: t('services.software.desc'),
+      slug: 'software',
     },
     {
       icon: Shield,
       title: t('services.qa.title'),
       description: t('services.qa.desc'),
+      slug: 'qa',
     },
     {
       icon: Cloud,
       title: t('services.devops.title'),
       description: t('services.devops.desc'),
+      slug: 'devops',
     },
     {
       icon: Lock,
       title: t('services.security.title'),
       description: t('services.security.desc'),
+      slug: 'security',
     },
     {
       icon: Brain,
       title: t('services.ai.title'),
       description: t('services.ai.desc'),
+      slug: 'ai',
     },
   ];
 

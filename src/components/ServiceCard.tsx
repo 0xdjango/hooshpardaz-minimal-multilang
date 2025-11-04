@@ -2,14 +2,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight, LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
+  slug: string;
 }
 
-export const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
+export const ServiceCard = ({ icon: Icon, title, description, slug }: ServiceCardProps) => {
   const { t, direction } = useLanguage();
   const ArrowIcon = direction === 'rtl' ? ArrowLeft : ArrowRight;
 
@@ -21,13 +23,15 @@ export const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps
         </div>
         <h3 className="text-xl font-semibold text-foreground">{title}</h3>
         <p className="text-muted-foreground leading-relaxed">{description}</p>
-        <Button 
-          variant="ghost" 
-          className="gap-2 text-primary hover:text-primary-hover hover:bg-accent group/btn p-0"
-        >
-          {t('services.learnMore')}
-          <ArrowIcon className="w-4 h-4 group-hover/btn:translate-x-1 transition-smooth" />
-        </Button>
+        <Link to={`/services/${slug}`}>
+          <Button 
+            variant="ghost" 
+            className="gap-2 text-primary hover:text-primary-hover hover:bg-accent group/btn p-0"
+          >
+            {t('services.learnMore')}
+            <ArrowIcon className="w-4 h-4 group-hover/btn:translate-x-1 transition-smooth" />
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );

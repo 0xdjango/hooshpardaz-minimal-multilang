@@ -9,46 +9,40 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'پلتفرم بانکی آنلاین',
-      titleEn: 'Online Banking Platform',
+      titleKey: 'portfolio.projects.banking.title',
       category: t('services.software.title'),
       tags: ['React', 'Node.js', 'PostgreSQL'],
-      description: 'توسعه پلتفرم بانکداری دیجیتال با امنیت بالا',
+      descKey: 'portfolio.projects.banking.desc',
     },
     {
-      title: 'سیستم مدیریت زیرساخت ابری',
-      titleEn: 'Cloud Infrastructure Management',
+      titleKey: 'portfolio.projects.cloud.title',
       category: t('services.devops.title'),
       tags: ['Kubernetes', 'Docker', 'AWS'],
-      description: 'راه‌اندازی و مدیریت زیرساخت ابری مقیاس‌پذیر',
+      descKey: 'portfolio.projects.cloud.desc',
     },
     {
-      title: 'پلتفرم تحلیل داده با AI',
-      titleEn: 'AI-Powered Data Analytics',
+      titleKey: 'portfolio.projects.ai.title',
       category: t('services.ai.title'),
       tags: ['Python', 'TensorFlow', 'Apache Spark'],
-      description: 'سیستم تحلیل هوشمند داده با یادگیری ماشین',
+      descKey: 'portfolio.projects.ai.desc',
     },
     {
-      title: 'تست نفوذ و امنیت شبکه',
-      titleEn: 'Network Security Assessment',
+      titleKey: 'portfolio.projects.security.title',
       category: t('services.security.title'),
       tags: ['Penetration Testing', 'Security Audit'],
-      description: 'ارزیابی امنیت و تست نفوذ برای شرکت مالی',
+      descKey: 'portfolio.projects.security.desc',
     },
     {
-      title: 'اپلیکیشن موبایل فروشگاهی',
-      titleEn: 'E-commerce Mobile App',
+      titleKey: 'portfolio.projects.mobile.title',
       category: t('services.software.title'),
       tags: ['React Native', 'Firebase', 'Stripe'],
-      description: 'اپلیکیشن فروشگاه آنلاین با پشتیبانی از پرداخت',
+      descKey: 'portfolio.projects.mobile.desc',
     },
     {
-      title: 'سیستم CI/CD خودکار',
-      titleEn: 'Automated CI/CD Pipeline',
+      titleKey: 'portfolio.projects.cicd.title',
       category: t('services.devops.title'),
       tags: ['Jenkins', 'GitLab', 'Ansible'],
-      description: 'پیاده‌سازی خط لوله CI/CD برای استقرار خودکار',
+      descKey: 'portfolio.projects.cicd.desc',
     },
   ];
 
@@ -63,7 +57,7 @@ const Portfolio = () => {
                 {t('nav.portfolio')}
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                نمونه‌ای از پروژه‌های موفق ما
+                {t('portfolio.subtitle')}
               </p>
             </div>
 
@@ -78,13 +72,10 @@ const Portfolio = () => {
                       {project.category}
                     </Badge>
                     <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-smooth">
-                      {project.title}
+                      {t(project.titleKey)}
                     </h3>
-                    <p className="text-sm text-muted-foreground italic">
-                      {project.titleEn}
-                    </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      {project.description}
+                      {t(project.descKey)}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, tagIndex) => (
